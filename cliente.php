@@ -11,12 +11,12 @@ if (!isset($_SESSION['usuario'])) {
 $conexion = conexion($bd_config);
 $user = iniciarSession('usuarios', $conexion);
 
-if ($user['tipo_usuario'] == 'usuario') {
+if ($user['tipo_usuario'] == 'Cliente') {
   // traer el nombre del usuario
   $user = iniciarSession('usuarios', $conexion);
 
 
-  require 'views/usuario.view.php';
+  require 'views/cliente.view.php';
 } else {
   header('Location: '.RUTA.'index.php');
 }

@@ -25,8 +25,8 @@
         <div class="input-group">
             <select class="form-control" name="rol">
                 <option value="">Seleccione un privilegio</option>
-                <option value="administrador">Administrador</option>
-                <option value="usuario">Usuario</option>
+                <option value="Dependiente">Dependiente</option>
+                <option value="Cliente">Cliente</option>
             </select>
 
         </div>

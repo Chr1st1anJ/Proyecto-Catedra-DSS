@@ -9,10 +9,10 @@ if (isset($_SESSION['usuario'])) {
   $conexion = conexion($bd_config);
   $usuario = iniciarSession('usuarios', $conexion);
 
-  if ($usuario['tipo_usuario'] == 'administrador') {
-    header('Location: '.RUTA.'admin.php');
-  } elseif ($usuario['tipo_usuario'] == 'usuario') {
-    header('Location: '.RUTA.'usuario.php');
+  if ($usuario['tipo_usuario'] == 'Dependiente') {
+    header('Location: '.RUTA.'dependiente.php');
+  } elseif ($usuario['tipo_usuario'] == 'Cliente') {
+    header('Location: '.RUTA.'cliente.php');
   } else {
     header('Location: '.RUTA.'login.php');
   }
