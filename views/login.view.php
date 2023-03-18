@@ -31,7 +31,7 @@
         <button type="submit" name="submit" class="btn btn-flat-green">Ingresar</button>
     </form>
 
-<a href="registro.php" class="login-link">No tienes cuenta?</a>
+<a href="registro.php" class="login-link">No tienes cuenta? Registrate aqui</a>
 
     </div>
 </body>
