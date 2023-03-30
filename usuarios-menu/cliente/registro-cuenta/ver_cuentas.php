@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="usuarios-menu/cliente/registro-cuenta/ver-diseños.css">
   <title>Cuentas bancarias</title>
 </head>
 <body>
