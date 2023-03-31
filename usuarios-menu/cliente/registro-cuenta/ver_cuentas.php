@@ -8,7 +8,6 @@
   <title>Cuentas bancarias</title>
 </head>
 <body>
-
   <table>
     <tr>
       <th>ID</th>
@@ -59,6 +58,5 @@ if (isset($_POST['submit'])) {
     exit();
 }
 ?>
-  
 </body>
 </html>
