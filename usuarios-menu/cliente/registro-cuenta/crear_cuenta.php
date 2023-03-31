@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="ver-diseños.css">
   <title>Crear cuenta bancaria</title>
 </head>
 <body>
@@ -11,6 +12,7 @@
     <label for="saldo">Saldo inicial:</label>
     <input type="number" name="saldo" min="0" step="0.01" required><br><br>
     <button type="submit">Crear cuenta</button>
+
   </form>
   <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
   <input type="submit" name="submit" value="Regresar">

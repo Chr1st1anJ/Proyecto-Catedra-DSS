@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="usuarios-menu/cliente/registro-cuenta/ver-diseños.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="VerDiseños.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cuentas bancarias</title>
 </head>
 <body>
-  <h1>Cuentas bancarias</h1>
+
   <table>
     <tr>
       <th>ID</th>
@@ -56,6 +59,6 @@ if (isset($_POST['submit'])) {
     exit();
 }
 ?>
+  
 </body>
 </html>
-
