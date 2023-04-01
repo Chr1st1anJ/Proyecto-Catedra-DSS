@@ -3,7 +3,6 @@ $host = 'localhost';
 $dbname = 'banco';
 $user = 'usuario_prueba';
 $pass = 'pruebausuario123';
-ECHO '<link href="../css/VerDiseños.css" type="text/css" rel="stylesheet">';
 
 $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass);
 ?>
@@ -11,6 +10,7 @@ $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass);
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link href="css/VerDiseños.css" type="text/css" rel="stylesheet">';
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
