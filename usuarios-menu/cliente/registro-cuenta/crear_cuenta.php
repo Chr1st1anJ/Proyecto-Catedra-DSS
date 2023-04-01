@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="ver-diseños.css">
   <title>Crear cuenta bancaria</title>
 </head>
 <body>
