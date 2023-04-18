@@ -27,6 +27,9 @@
                 <option value="">Seleccione un privilegio</option>
                 <option value="Dependiente">Dependiente</option>
                 <option value="Cliente">Cliente</option>
+                <option value="Cajero">Cajero</option>
+                <option value="Ger.Sucursal">Gerente de Sucursal</option>
+                <option value="Ger.General">Gerente General del Banco</option>
             </select>
 
         </div>
