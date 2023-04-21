@@ -10,6 +10,8 @@
     <input type="text" name="nombre" required><br><br>
     <label for="saldo">Saldo inicial:</label>
     <input type="number" name="saldo" min="0" step="0.01" required><br><br>
+    <label for="dui">Número de DUI:</label>
+    <input type="text" name="dui" required><br><br>
     <button type="submit">Crear cuenta</button>
 
   </form>
@@ -49,19 +51,20 @@ if ($num_cuentas >= 3) {
 // Recibir los datos del formulario
 $nombre = $_POST["nombre"];
 $saldo = $_POST["saldo"];
+$dui = $_POST["dui"];
 
 // Generar un identificador único para la cuenta bancaria
-$id = rand(1, 999999);
-$sql = "SELECT id FROM cuentas WHERE id = $id";
+$cuenta = rand(1, 999999);
+$sql = "SELECT cuenta FROM cuentas WHERE cuenta = $cuenta";
 $resultado = $conn->query($sql);
 while ($resultado->num_rows > 0) {
-  $id = rand(1, 999999);
-  $sql = "SELECT id FROM cuentas WHERE id = $id";
+  $cuenta = rand(1, 999999);
+  $sql = "SELECT id FROM cuentas WHERE id = $cuenta";
   $resultado = $conn->query($sql);
 }
 
 // Insertar la nueva cuenta bancaria en la base de datos
-$sql = "INSERT INTO cuentas (id, nombre, saldo) VALUES ('$id', '$nombre', '$saldo')";
+$sql = "INSERT INTO cuentas (cuenta, nombre, saldo, dui) VALUES ('$cuenta', '$nombre', '$saldo', '$dui')";
 if ($conn->query($sql) === TRUE) {
   echo "Cuenta bancaria creada exitosamente";
 } else {
