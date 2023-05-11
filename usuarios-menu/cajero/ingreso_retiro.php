@@ -43,6 +43,60 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
   <title>Transacciones</title>
+  <style>
+    form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  select,
+  input[type="number"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+  </style>
 </head>
 <body>
   <h1>Transacciones</h1>
@@ -66,6 +120,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <button type="submit">Realizar transacción</button>
   </form>
   </form>
+  <br>
   <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
   <input type="submit" name="submit" value="Regresar">
 </form>

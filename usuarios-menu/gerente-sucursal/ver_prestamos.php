@@ -2,6 +2,35 @@
 <html>
 <head>
 	<title>Ver préstamos</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			padding: 8px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+		th {
+			background-color: #007bff;
+			color: white;
+		}
+		form {
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+		}
+		input[type=submit] {
+			background-color: #0069d9;
+			color: white;
+			border: none;
+			padding: 8px 16px;
+			text-decoration: none;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+	</style>
 </head>
 <body>
 	<h1>Préstamos pendientes de aprobación</h1>

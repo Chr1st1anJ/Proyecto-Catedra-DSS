@@ -2,6 +2,46 @@
 <html>
 <head>
 	<title>Formulario de Registro de Clientes o Prestamistas</title>
+	<style>
+		form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+	</style>
 </head>
 <body>
 	<h1>Registro de Clientes o Prestamistas</h1>
@@ -26,6 +66,7 @@
 		<br>
 		<input type="submit" value="Enviar">
 	</form>
+	<br>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
   <input type="submit" name="submit" value="Regresar">
 </form>
